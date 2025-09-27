@@ -4,7 +4,7 @@ const messageDiv = document.getElementById('message');
 const song = document.getElementById('song');
 
 yesButton.addEventListener('click', function () {
-    messageDiv.textContent = 'Ótimo, te amo! 🥰❤️';
+    messageDiv.textContent = 'Ótimo, Te Amo! 🥰❤️';
     messageDiv.style.color = '#ff66b2';
     
     // Tocar música
@@ -21,3 +21,4 @@ noButton.addEventListener('click', function () {
     song.pause();
     song.currentTime = 0;
 });
+
