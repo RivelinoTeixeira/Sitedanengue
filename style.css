@@ -1,0 +1,92 @@
+body {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    background-image: url('https://www.transparenttextures.com/patterns/coffee-cups.png');
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#yes {
+    background-color: #ff66b2;
+    color: white;
+    border-color: #ff3385;
+}
+
+#no {
+    background-color: #ff4d4d;
+    color: white;
+    border-color: #e60000;
+}
+
+#yes:hover {
+    background-color: #ff3385;
+}
+
+#no:hover {
+    background-color: #e60000;
+}
+
+@keyframes hearts {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { transform: translateY(-50px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+    color: #ff66b2;
+    animation: hearts 2s infinite;
+}
+
+.heart:nth-child(odd) {
+    animation-duration: 2.5s;
+    animation-delay: -1s;
+}
+
+.heart:nth-child(even) {
+    animation-duration: 2s;
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 1.8em;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+audio {
+    display: none;
+}
